@@ -155,7 +155,35 @@
             color: #555;
             line-height: 1.4;
         }
-    </style>
+/* ▼▼▼ 追加：全体討論のポンチ絵スタイル ▼▼▼ */
+/* セクション全体（ここは前回と同じでOKです） */
+.discussion-diagram-section {
+    margin-top: 10px;
+    border-top: 2px solid #eee;
+    padding-top: 40px;
+    text-align: center; /* これがあるおかげで画像も文字も中央に寄ります */
+}
+.discussion-diagram-section h2 {
+    margin-bottom: 30px;
+}
+
+/* ▼▼▼ 新しく書き換える部分 ▼▼▼ */
+/* 枠なし画像のスタイル */
+.discussion-diagram-section img {
+    max-width: 800px; /* PCで見たときの最大の横幅。お好みで 700px や 900px に調整してください */
+    width: 100%; /* スマホなどの小さい画面では、画面の幅に合わせて縮むようにする */
+    height: auto; /* 縦横比を崩さない */
+    margin-bottom: 15px; /* 下のキャプションとの隙間 */
+}
+
+/* キャプションのスタイル */
+.discussion-diagram-section .diagram-caption {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+}
+/* ▲▲▲ ここまで ▲▲▲ */
+</style>
 </head>
 <body>
 
@@ -301,8 +329,15 @@
 
             <h4>全体討論</h4>
             <ul class="program-list">
-                <li>共同研究や共同プロポーザルに関する今後の方針</li>
+                <li>共同研究や共同プロポーザルに関する今後の方針を議論しました。</li>
             </ul>
+<section class="report-section discussion-diagram-section" id="discussion-diagram">
+
+<!--            <div class="discussion-diagram-wrap"> -->
+                <img src="../images/1i_summary.png" alt="全体討論で描かれたポンチ絵">
+                <p class="diagram-caption">本セミナーの全体像</p>
+<!--                        </div> -->
+        </section> 
         </section>
 
     </div>
