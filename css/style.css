@@ -184,3 +184,40 @@ footer {
     .schedule-table th, .schedule-table td { display: block; width: 100%; }
     .schedule-table th { background: transparent; padding-bottom: 0; color: var(--accent-color); }
 }
+
+/* --- ドロップダウンメニューのスタイル --- */
+/* 親メニューのリスト項目 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* ドロップダウンの中身（初期状態は非表示にする） */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100; /* 他の要素より手前に表示させる */
+}
+
+/* ドロップダウン内のリンクのデザイン */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9em;
+}
+
+/* ドロップダウン内のリンクにカーソルを乗せた時の背景色 */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* 親メニュー（開催報告）にカーソルを乗せたら、中身を表示する */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
