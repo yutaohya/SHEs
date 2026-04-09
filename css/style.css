@@ -221,3 +221,89 @@ footer {
     display: block;
 }
 
+/* =========================================
+   講師紹介セクションのスタイル
+========================================= */
+#speakers {
+    margin-top: 40px;
+}
+
+.speaker-card {
+    display: flex;
+    flex-wrap: wrap;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* 軽い影をつけて浮かせる */
+}
+
+/* 写真部分 */
+.speaker-photo {
+    flex: 0 0 150px; /* 写真の幅を150pxに固定 */
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+.speaker-photo img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* 正方形にする */
+    object-fit: cover; /* 画像が歪まないように切り抜く */
+    border-radius: 50%; /* 写真を丸くする。四角が良い場合はこの行を消す */
+    border: 3px solid #f0f0f0;
+}
+
+/* テキスト情報部分 */
+.speaker-info {
+    flex: 1;
+    min-width: 250px; /* スマホなどで幅が狭くなったら縦並びにする */
+}
+
+.speaker-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #333;
+    border-bottom: 2px solid #ff9800; /* 名前の下にアクセントカラーの線 */
+    padding-bottom: 5px;
+}
+
+.speaker-affiliation {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.speaker-theme {
+    font-size: 1.1rem;
+    color: #0056b3; /* テーマは少し目立つ青色に */
+    margin-bottom: 15px;
+}
+
+.speaker-abstract {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.speaker-bio {
+    font-size: 0.9rem;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.speaker-links a {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.speaker-links a:hover {
+    text-decoration: underline;
+}
