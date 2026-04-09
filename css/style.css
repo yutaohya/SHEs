@@ -251,7 +251,6 @@ footer {
     height: auto;
     aspect-ratio: 1 / 1; /* 正方形にする */
     object-fit: cover; /* 画像が歪まないように切り抜く */
-    border-radius: 50%; /* 写真を丸くする。四角が良い場合はこの行を消す */
     border: 3px solid #f0f0f0;
 }
 
