@@ -6,6 +6,30 @@
     <title>第2回 極端気象水文セミナー</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .speaker-bio {
+            display: flow-root; /* floatを内包してボックスの高さ崩れを防ぐ */
+        }
+        .bio-photo-wrap {
+            float: right;
+            width: 180px;
+            margin: 10px 0 10px 20px;
+        }
+        .bio-photo-wrap img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid #f0f0f0;
+        }
+        @media screen and (max-width: 480px) {
+            .bio-photo-wrap {
+                float: none;
+                width: 140px;
+                margin: 0 auto 15px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -61,9 +85,6 @@
             <h2>講師紹介</h2>
 
             <div class="speaker-card">
-                <div class="speaker-photo">
-                    <img src="../images/tomonorisato.jpg" alt="佐藤友徳教授">
-                </div>
                 <div class="speaker-info">
                     <h3 class="speaker-name">佐藤 友徳 教授 <span class="speaker-affiliation">（北海道大学 地球環境科学研究院）</span></h3>
 
@@ -72,6 +93,9 @@
                     </p>
 
                     <p class="speaker-bio">
+                        <span class="bio-photo-wrap">
+                            <img src="../images/tomonorisato.jpg" alt="佐藤友徳教授">
+                        </span>
                         <strong>【略歴】</strong><br>
                         新潟県十日町市出身。2005年に筑波大学で博士（理学）を取得。その後、日本学術振興会特別研究員（PD）、東京大学気候システム研究センター勤務などを経て、2009年より北海道大学に勤務。2025年より現職。同年より極端気象アトリビューションセンター・リサーチフェローを兼任。気象学、気候学を専門とし、大気・海洋・陸域の相互作用を水循環の観点から研究している。近年は、豪雨、豪雪、熱波、干ばつなどの極端気象の発生・変動メカニズムの解明に加え、北極域の環境変化が中緯度の気象・気候に及ぼす影響の解析にも取り組んでいる。
                     </p>
