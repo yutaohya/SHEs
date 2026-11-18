@@ -306,3 +306,19 @@ footer {
 .speaker-links a:hover {
     text-decoration: underline;
 }
+
+/* Vol2専用のヘッダー背景画像 */
+.hero-vol2 {
+    /* 写真の上に黒い半透明のフィルターを重ねて文字を読みやすくする */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/enyu.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Vol2専用の文字色と影の設定 */
+.hero-vol2 h1,
+.hero-vol2 p,
+.hero-vol2 div {
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
